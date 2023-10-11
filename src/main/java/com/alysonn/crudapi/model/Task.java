@@ -9,8 +9,11 @@ import java.util.UUID;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class Task {
     private final UUID taskId;
+    @NotBlank
     private final String name;
     private final String description;
     // private final Status status;

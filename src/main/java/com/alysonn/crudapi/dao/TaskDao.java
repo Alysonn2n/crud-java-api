@@ -1,6 +1,7 @@
 package com.alysonn.crudapi.dao;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import com.alysonn.crudapi.model.Task;
@@ -14,4 +15,10 @@ public interface TaskDao {
     }
 
     List<Task> getTasks();
+
+    String deleteTaskById(UUID taskId);
+
+    Optional<Task> getTaskById(UUID taskId);
+
+    String updateTaskById(UUID taskId, Task newTask);
 }
