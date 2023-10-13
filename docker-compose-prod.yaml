@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres: 
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD: "123456"
+    ports:
+      - "5432:5432"
+  api-docker:
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: base
+    volumes:
+      - ./src:/app
+    container_name: api-docker
+    expose:
+      - '8080'
+    ports:
+      - '8080:8080'
+    command: "java -jar app.jar"
