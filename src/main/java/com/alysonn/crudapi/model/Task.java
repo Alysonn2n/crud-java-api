@@ -2,9 +2,13 @@ package com.alysonn.crudapi.model;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.TimeZone;
 import java.util.UUID;
+
+import org.springframework.util.ReflectionUtils;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -69,5 +73,18 @@ public class Task {
     public UUID getTaskId() {
         return taskId;
     }
+
+
+    // public List<String> getNotNullFields() {
+    //     List<String> fields = new ArrayList<>();
+    //     ReflectionUtils.doWithFields(Task.class, field -> {
+    //         Object objectValue = field.get(field);
+    //         if(objectValue != null) {
+    //             fields.add(field.getName());
+    //         }
+    //     });
+
+    //     return fields;
+    // }
 
 }
