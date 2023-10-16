@@ -1,10 +1,11 @@
 ## First Java API
 
-Hey, how is it going? So, this is a simple CRUD api that i made using as base `freecodecamp` videos
+Hey, how is it going? So, this is a simple CRUD api that i made using `maven` and `spring-boot`, with the help of
+`freecodecamp` videos.
 
 ### Setup
 
-First, you need to have docker installed at your computer, so check out docker website and see 
+First, you need to have docker installed on your computer, so check out docker website and see 
 how to install it on your operation system (https://docs.docker.com/get-docker/).
 
 Then, run on terminal:
