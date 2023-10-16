@@ -1,0 +1,7 @@
+app:
+    datasource:
+        jdbcUrl: jdbc:postgresql://localhost:5432/demodb
+        driver: postgres
+        username: "postgres"
+        password: "123456"
+        poolSize: 30
